@@ -4,17 +4,17 @@ local dfpwm = require("cc.audio.dfpwm")
 
 --Set peripheral names here please
 
-local bigcolourmonitor = peripheral.wrap("monitor_0") --> The main, 4x4 advanced monitor
+local bigcolourmonitor = peripheral.wrap("monitor_3") --> The main, 4x4 advanced monitor
 bigcolourmonitor.setTextScale(0.5)
 
-local greymonitor = peripheral.wrap("monitor_1") --> The 4x1 normal monitor below the bigcolourmonitor (do NOT use an advanced monitor here)
+local greymonitor = peripheral.wrap("monitor_2") --> The 4x1 normal monitor below the bigcolourmonitor (do NOT use an advanced monitor here)
 greymonitor.setTextScale(0.5)
 greymonitor.clear()
 
-local smallcolourmonitor = peripheral.wrap("monitor_2") --> The 4x1 advanced monitor below the grey monitor
+local smallcolourmonitor = peripheral.wrap("monitor_1") --> The 4x1 advanced monitor below the grey monitor
 smallcolourmonitor.setTextScale(0.5)
 
-local speakermonitor = peripheral.wrap("monitor_3") --> The 1x2 vertical monitor for audio controls above the speakers
+local speakermonitor = peripheral.wrap("monitor_4") --> The 1x2 vertical monitor for audio controls above the speakers
 speakermonitor.setTextScale(0.5)
 
 local diskdrive = peripheral.wrap("drive_0") --> The disk drive for using floppy disks
